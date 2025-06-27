@@ -10,8 +10,11 @@ def get_files_from_repo(directory):
     result = subprocess.run(['git', 'ls-files', directory], stdout=subprocess.PIPE)
     files = result.stdout.decode().splitlines()
     
+    # Filter out .md files and get only file names (not the full paths)
+    files_to_include = [file.split(os.sep)[-1] for file in files if not file.endswith('.md')]  # Get only file name
+    
     # Convert to markdown file list format
-    markdown_list = [f"- [{file}]({file})" for file in files]
+    markdown_list = [f"- [{file}]({file})" for file in files_to_include]
     
     return markdown_list
 
@@ -23,13 +26,13 @@ def generate_file_list_for_subdirectories():
         
         # Only process directories, skip files
         if os.path.isdir(subdir_path):
-            # Get list of files for this subdirectory (including all file types)
+            # Get list of files for this subdirectory (excluding .md files)
             file_list = get_files_from_repo(subdir_path)
             
             # Create a file_list.md inside each subdirectory
             file_list_path = os.path.join(subdir_path, 'file_list.md')
             with open(file_list_path, 'w') as f:
-                f.write(f"# List of Files in the {subdir} Directory\n\n")
+                f.write(f"# List of Files in the {subdir} Directory (excluding .md files)\n\n")
                 f.write("\n".join(file_list))
 
 # Run the function to generate file lists
