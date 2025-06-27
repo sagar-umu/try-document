@@ -30,7 +30,7 @@ def generate_file_list_for_subdirectories():
             file_list = get_files_from_repo(subdir_path)
             
             # Create a file_list.md inside each subdirectory
-            file_list_path = os.path.join(subdir_path, 'file_list.md')
+            file_list_path = os.path.join(subdir_path, 'index.md')
             with open(file_list_path, 'w') as f:
                 f.write(f"#Files in {subdir} Directory\n\n")
                 f.write("\n".join(file_list))
