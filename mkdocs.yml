@@ -12,14 +12,14 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
-      primary: green
-      accent: purple
+      primary: light green
+      accent: deep purple
     - scheme: slate
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
-      primary: blue
-      accent: lime
+      primary: light green
+      accent: deep purple
   features:
     - navigation.tabs
     - navigation.tabs.sticky
