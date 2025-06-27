@@ -32,7 +32,7 @@ def generate_file_list_for_subdirectories():
             # Create a file_list.md inside each subdirectory
             file_list_path = os.path.join(subdir_path, 'file_list.md')
             with open(file_list_path, 'w') as f:
-                f.write(f"# List of Files in the {subdir} Directory (excluding .md files)\n\n")
+                f.write(f"#Files in {subdir} Directory\n\n")
                 f.write("\n".join(file_list))
 
 # Run the function to generate file lists
