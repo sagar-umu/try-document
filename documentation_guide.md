@@ -122,10 +122,8 @@ def clone_repo_dirs():
 
 if __name__ == "__main__":
     clone_repo_dirs()
-
-</details>
 ```
-
+</details>
 
  5. Create a `mkdocs.yml` file and copy this code to it
 ```yml
