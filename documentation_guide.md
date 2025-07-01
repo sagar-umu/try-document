@@ -37,8 +37,7 @@ This guide defines steps for hosting your GitHub repository using Read the Docs 
 
 > [!TIP]
 > You can automate the cloning of directories from root to `/docs` by using 
-> <details><summary> <i> this python code </i> </summary> 
-
+> <details><summary><i>this</i> </summary> 
 ```python
 import os
 import shutil
@@ -123,8 +122,10 @@ def clone_repo_dirs():
 
 if __name__ == "__main__":
     clone_repo_dirs()
-```
+
 </details>
+```
+
 
  5. Create a `mkdocs.yml` file and copy this code to it
 ```yml
