@@ -114,3 +114,5 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python clone_directories_to_docs.py
       - run: mkdocs gh-deploy --force
+```
+7. Once you ahve these files, commit and push changes to your repository. 
