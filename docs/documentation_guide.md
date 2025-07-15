@@ -30,11 +30,12 @@ This guide defines steps for hosting your GitHub repository using Read the Docs 
         mike
         mkdocs-macros-plugin
 
-> [!NOTE]
+ > [!NOTE]
 > If you want directories (and their contents) from your repository to be visible on the webpage, they will need 
 >   1. to be in the `docs` directory
 >   2. an `index.md` file of their own
-> [!TIP]
+
+ > [!TIP]
 > You can automate the cloning of directories from root to `/docs` by using 
 > <details><summary> <i> this python code </i> </summary> 
 
@@ -170,7 +171,7 @@ type: date
 - mike
 - macros
 ```
-6.  Setup for **GitHub Pages**:
+ 6.  Setup for **GitHub Pages**:
 - In your root directory create `/.github/workflows/`
 - In the workflows directory create a file `ci.yml` and paste the following code to it 
 ```yml
@@ -201,4 +202,4 @@ jobs:
       - run: python clone_directories_to_docs.py
       - run: mkdocs gh-deploy --force
 ```
-7. 
+ 7. 
