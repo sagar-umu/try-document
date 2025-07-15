@@ -18,7 +18,7 @@ This guide defines steps for hosting your GitHub repository using Read the Docs 
 
 ### Set-up
 
-1. Clone your GitHub repository of interest using the [Clone Git Repository...](<Screenshot 2025-06-27 at 10.25.21-1.png>) option.
+1. Clone your GitHub repository of interest using the Clone Git Repository option.
 
 2. Create a `/docs` directory in your repository.
 
