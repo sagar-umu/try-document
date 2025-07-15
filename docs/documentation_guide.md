@@ -30,10 +30,11 @@ This guide defines steps for hosting your GitHub repository using Read the Docs 
         mike
         mkdocs-macros-plugin
 
-> [!NOTE]
-> If you want directories (and their contents) from your repository to be visible on the webpage, they will need 
->   1. to be in the `docs` directory
->   2. an `index.md` file of their own
+!!! note
+    
+    If you want directories (and their contents) from your repository to be visible on the webpage, they will need 
+        1. to be in the `docs` directory
+        2. an `index.md` file of their own
 
     > [!TIP]
     > You can automate the cloning of directories from root to `/docs` by using 

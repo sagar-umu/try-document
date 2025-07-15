@@ -41,4 +41,8 @@ plugins:
       type: date
   - mike
   - macros
-  
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
