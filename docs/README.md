@@ -255,17 +255,17 @@ This guide defines steps for hosting your GitHub repository using Read the Docs 
 
 ### Building and deploying webpage
 
-1. **Using mkdocs to deploy locally for testing.** This is a great way of visaulizing how your webpage will look once rendered. Follow these steps:  
+1. **Using mkdocs to deploy locally for testing.** This is a great way of visualizing how your webpage will look once rendered. Follow these steps:  
     - Navigate to the repository directory on your local machine
     - Create a virtual python environment by `python -m venve venv`
     - Activate the environemnt: `source venv/bin/activate`
-    - Install required plug-ins from the requiremnts.txt file: `pip install -r requirements.txt`
+    - Install required plug-ins from the requirements.txt file: `pip install -r requirements.txt`
     - OPTIONAL: If you are copying the directories into the `/docs` dir. using the python script you can do that now by running the script. 
     - Build and serve your webpage: `python -m mkdocs serve`
     - Your webpage should be available on localhost `http://127.0.0.1:8000/....`
 
 2. **Hosting on GHPages.** Hosting on GHPages involves taking the following steps:
-    - Make sure that you have committed and pushed the additional changes and iles to your GH repository (repo).
+    - Make sure that you have committed and pushed the additional changes and files to your GH repository (repo).
     - Once your repo is up-to-date navigate to your repo and navigate to *Settings > Pages* and select `Deploy from a branch` under the **Build and Deployment** menu. 
     - Under *Branch* select `gh-pages` and `/root` from the drop-down menus and click save
     - Once you have done these steps, a link to your webpage should appear on top of the same page. You can visit your site from there.
