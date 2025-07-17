@@ -179,6 +179,7 @@ This guide defines steps for hosting your GitHub repository using Read the Docs 
       - awesome-pages
       - git-revision-date-localized:
           type: date
+          fallback_to_build_date: true
       - mike
       - macros
 
@@ -190,7 +191,7 @@ This guide defines steps for hosting your GitHub repository using Read the Docs 
     </details>
 
 7. Set up **GitHub Pages** deployment:
-    - In your root directory, create: `/.github/workflows/`
+    - In your root directory, create: `.github/workflows/`
     - Inside that, create a file `ci.yml` with the following contents:
 
     <details>
@@ -257,7 +258,7 @@ This guide defines steps for hosting your GitHub repository using Read the Docs 
 
 1. **Using mkdocs to deploy locally for testing.** This is a great way of visualizing how your webpage will look once rendered. Follow these steps:  
     - Navigate to the repository directory on your local machine
-    - Create a virtual python environment by `python -m venve venv`
+    - Create a virtual python environment by `python -m venv venv`
     - Activate the environemnt: `source venv/bin/activate`
     - Install required plug-ins from the requirements.txt file: `pip install -r requirements.txt`
     - OPTIONAL: If you are copying the directories into the `/docs` dir. using the python script you can do that now by running the script. 
