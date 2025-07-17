@@ -131,7 +131,7 @@ This guide defines steps for hosting your GitHub repository using Read the Docs 
         ```
         </details>
 
-6. Create a `mkdocs.yml` file in the root and add the following content:
+6. Create a `mkdocs.yml` file in the root directory and add the following content:
 
     <details>
     <summary><i>Show mkdocs.yml</i></summary>
